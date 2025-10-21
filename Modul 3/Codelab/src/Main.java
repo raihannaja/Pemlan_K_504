@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Pegawai {
-    private String nama;
+    private String namaPegawai;
     private double gajiPokok;
     private double tunjangan;
     private double pajak;
@@ -9,7 +9,7 @@ class Pegawai {
 
 
     public Pegawai(String nama, double gajiPokok) {
-        this.nama = nama;
+        this.namaPegawai = nama;
         this.gajiPokok = gajiPokok;
         hitungGaji();
     }
@@ -24,11 +24,12 @@ class Pegawai {
     // Method untuk menampilkan hasil
     public void tampilkanData() {
         System.out.println("\n=== Data Gaji Pegawai ===");
-        System.out.println("Nama Pegawai  : " + nama);
+        System.out.println("Nama Pegawai  : " + namaPegawai);
         System.out.println("Gaji Pokok    : Rp " + gajiPokok);
         System.out.println("Tunjangan     : Rp " + tunjangan);
         System.out.println("Pajak (5%)    : Rp " + pajak);
         System.out.println("Gaji Bersih   : Rp " + gajiBersih);
+        System.out.println("Selamat menghabiskan uang");
     }
 }
 
