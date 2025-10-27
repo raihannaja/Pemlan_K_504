@@ -14,7 +14,9 @@ class Pegawai {
         hitungGaji();
     }
 
-    // Method untuk menghitung gaji
+    /**
+     * @pram
+     */
     private void hitungGaji() {
         tunjangan = gajiPokok * 0.2; // tunjangan 20%
         pajak = (gajiPokok + tunjangan) * 0.05; // pajak 5%
